@@ -1,0 +1,29 @@
+﻿# Host: localhost  (Version 5.5.5-10.1.10-MariaDB)
+# Date: 2019-04-04 02:56:21
+# Generator: MySQL-Front 6.0  (Build 2.20)
+
+
+#
+# Structure for table "tbl_user"
+#
+
+CREATE TABLE `tbl_user` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `KODE_PDAM` varchar(255) DEFAULT NULL,
+  `NIK` varchar(255) DEFAULT NULL,
+  `USERNAME` varchar(255) DEFAULT NULL,
+  `PASSWORD` varchar(255) DEFAULT NULL,
+  `AVATAR` text,
+  `LEVEL_USER` int(255) DEFAULT NULL,
+  `STATUS` int(11) DEFAULT NULL,
+  `DEVICE_ID` varchar(255) DEFAULT NULL,
+  `CREATE_AT` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `UPDATE_AT` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+#
+# Data for table "tbl_user"
+#
+
+INSERT INTO `tbl_user` VALUES (1,'10001','12345','082220345210','123456',NULL,2,1,'abcde','2019-04-03 18:02:15','2019-04-03 18:02:15'),(2,'10001','54321','08161938582','123456',NULL,2,1,'fghij','2019-04-03 23:05:25','2019-04-03 23:05:25');
